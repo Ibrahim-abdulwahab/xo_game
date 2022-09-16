@@ -13,6 +13,18 @@ window.addEventListener('load', function(){
     let i=1;
     let redpoint=1;
     let yellowpoint=1;
+    const reset =()=>{
+        i=1;
+        card1.className="card";
+        card2.className="card";
+        card3.className="card";
+        card4.className="card";
+        card5.className="card";
+        card6.className="card";
+        card7.className="card";
+        card8.className="card";
+        card9.className="card";
+    }
 
     const playerorder=x=>{
         if (i%2==0){
@@ -35,29 +47,11 @@ window.addEventListener('load', function(){
                 if (playerturn=="red"){
                     redscore.innerHTML=`red: ${redpoint}`;
                     redpoint=redpoint+1;
-                    i=1;
-                    card1.className="card";
-                    card2.className="card";
-                    card3.className="card";
-                    card4.className="card";
-                    card5.className="card";
-                    card6.className="card";
-                    card7.className="card";
-                    card8.className="card";
-                    card9.className="card";
+                    reset()
                 }
                 else{yellowscore.innerHTML=`yellow ${yellowpoint}`;
                     yellowpoint=yellowpoint+1;
-                    i=1;
-                    card1.className="card";
-                    card2.className="card";
-                    card3.className="card";
-                    card4.className="card";
-                    card5.className="card";
-                    card6.className="card";
-                    card7.className="card";
-                    card8.className="card";
-                    card9.className="card";}
+                    reset()}
         }}
     }
         const card1click = () =>{
