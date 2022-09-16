@@ -44,7 +44,7 @@ html {
     height: 100%;
     flex-grow: 1;
 }
-.card-red{
+.red{
     background-image: url(C:/Users/Ibrahim/Desktop/xo_game/images/red.jpeg) ;
     background-size:252px 120px;
     background-repeat: no-repeat;
@@ -52,7 +52,7 @@ html {
     height: 100%;
     flex-grow: 1;
 }
-.card-yellow{
+.yellow{
     background-image: url(C:/Users/Ibrahim/Desktop/xo_game/images/yellow.jpeg) ;
     background-size:252px 120px;
     background-repeat: no-repeat;
