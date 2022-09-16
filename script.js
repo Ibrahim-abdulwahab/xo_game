@@ -33,6 +33,48 @@ window.addEventListener('load', function(){
         
         card2.addEventListener("click",card2click)
 
+        const card3click = () =>{
+            playerorder(card3)
+         }
+         
+         card3.addEventListener("click",card3click)
+
+         const card4click = () =>{
+            playerorder(card4)
+         }
+         
+         card4.addEventListener("click",card4click)
+
+         const card5click = () =>{
+            playerorder(card5)
+         }
+         
+         card5.addEventListener("click",card5click)
+
+         const card6click = () =>{
+            playerorder(card6)
+         }
+         
+         card6.addEventListener("click",card6click)
+
+         const card7click = () =>{
+            playerorder(card7)
+         }
+         
+         card7.addEventListener("click",card7click)
+
+         const card8click = () =>{
+            playerorder(card8)
+         }
+         
+         card8.addEventListener("click",card8click)
+
+         const card9click = () =>{
+            playerorder(card9)
+         }
+         
+         card9.addEventListener("click",card9click)
+
         
     
 })
