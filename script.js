@@ -9,7 +9,34 @@ window.addEventListener('load', function(){
     const card8=document.getElementById("card-eight");
     const card9=document.getElementById("card-nine");
     const scoreboard=document.getElementById("score");
+    let i=0;
 
+        const card1click = () =>{
+            if (i%2==0){
+                playerturn="card-red"
+            }
+            else{
+                playerturn="card-yellow"
+            }
+            card1.className=playerturn;
+            i=i+1;
+            console.log(i)
+        }
+        
+        card1.addEventListener("click",card1click)
 
-    card1.addEventListener("click",card1click)
+        const card2click = () =>{
+            if (i%2==0){
+                playerturn="card-red"
+            }
+            else{
+                playerturn="card-yellow"
+            }
+            card2.className=playerturn;
+            i=i+1;
+            console.log(i)
+        }
+        
+        card2.addEventListener("click",card2click)
+    
 })
