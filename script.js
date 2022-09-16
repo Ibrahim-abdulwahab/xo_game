@@ -11,32 +11,28 @@ window.addEventListener('load', function(){
     const scoreboard=document.getElementById("score");
     let i=0;
 
+    const playerorder=x=>{
+        if (i%2==0){
+            playerturn="card-red"
+        }
+        else{
+            playerturn="card-yellow"
+        }
+        x.className=playerturn;
+        i=i+1;
+    }
         const card1click = () =>{
-            if (i%2==0){
-                playerturn="card-red"
-            }
-            else{
-                playerturn="card-yellow"
-            }
-            card1.className=playerturn;
-            i=i+1;
-            console.log(i)
+           playerorder(card1)
         }
         
         card1.addEventListener("click",card1click)
 
         const card2click = () =>{
-            if (i%2==0){
-                playerturn="card-red"
-            }
-            else{
-                playerturn="card-yellow"
-            }
-            card2.className=playerturn;
-            i=i+1;
-            console.log(i)
+           playerorder(card2)
         }
         
         card2.addEventListener("click",card2click)
+
+        
     
 })
