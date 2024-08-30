@@ -10,9 +10,9 @@ window.addEventListener('load', function(){
     const card9=document.getElementById("card-nine");
     const redscore=document.getElementById("score-red");
     const yellowscore=document.getElementById("score-yellow");
-    let i=1;
-    let redpoint=1;
-    let yellowpoint=1;
+    let i=1;//number of current round
+    let redpoint=1;//player one's score
+    let yellowpoint=1;//player two's score
     let card1pressed=0;//cheat prevention
     let card2pressed=0;
     let card3pressed=0;
@@ -54,7 +54,7 @@ window.addEventListener('load', function(){
         x.className=playerturn;
         i=i+1;
         if (i===10){
-            setTimeout(() => reset(), 1000);
+            setTimeout(() => reset(), 1000);//After 10th round no moves can be made so game resets
         }
         if (i>=4){
             if((card1.className==playerturn && card2.className==playerturn && card3.className==playerturn)
